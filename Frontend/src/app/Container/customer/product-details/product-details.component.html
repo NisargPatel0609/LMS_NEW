@@ -1,0 +1,50 @@
+<main>
+    <!-- <ng-container *ngIf="inventory"> -->
+    <div class="card">
+        <div class="card__body">
+            <div class="half">
+                <div class="image">
+                    <!-- <img src="https://images-na.ssl-images-amazon.com/images/I/613A7vcgJ4L._SL1500_.jpg" alt=""> -->
+                    <img src={{inventory.image}} alt="">
+                </div>
+            </div>
+
+                <div class="half">
+                    <div class="featured_text">
+                        <h1>{{inventory.name}}</h1>
+                        <p class="sub">{{inventory.category}}</p>
+                        <div class="description">
+                            <p>{{inventory.description}}</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="price">{{inventory.price | currency:'INR'}}</p>
+                    </div>
+                </div>
+
+                
+                
+                <!-- <div class="half">
+                <div class="featured_text">
+                    <h1>Nurtor</h1>
+                    <p class="sub">Chair</p>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ipsa amet expedita. Dolorum
+                            ipsam, illo nulla rerum molestiae placeat ducimus maiores quos esse!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="price">&#x20B9; 210.00</p>
+                    </div>
+                </div> -->
+                
+            </div>
+            
+            <div class="card__footer">
+                <div class="action">
+                    <button type="button" (click)="buyNow(inventory.id)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    <!-- </ng-container> -->
+</main>
